@@ -1,0 +1,197 @@
+:root {
+  --primary-gradient: hsla(190, 7%, 50%, 0.5);
+  --secondary-gradient: hsla(0, 0%, 100%, 0.921);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 4em;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+img {
+  max-width: 50%;
+}
+
+section {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0;
+  text-align: center;
+  background-image: url("./resources/images/sky-bw.png");
+  background-size: cover;
+  padding: 2em 0;
+}
+
+ul {
+  list-style: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+}
+
+header div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nav__item {
+  background-color: rgb(48, 48, 132);
+  color: white;
+  padding: 0.7em;
+  border-radius: 7px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  opacity: 0.65;
+  color: lightgray;
+}
+
+.nav__list li {
+  margin-bottom: 2em;
+}
+
+.gradient {
+  background: radial-gradient(
+    var(--primary-gradient),
+    var(--secondary-gradient)
+  );
+}
+
+.about__me {
+  font-family: "Playfair Display", serif;
+}
+
+.about__me p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.img__container {
+  /* centers the img: */
+  text-align: center;
+}
+
+#flying-pic {
+  border-radius: 2em;
+  width: 35%;
+  display: none;
+}
+
+.skills div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skills__item {
+  margin-bottom: 0.75em;
+}
+
+.contact div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact__item i {
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .nav {
+    margin-top: 4em;
+  }
+
+  .nav__list {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__list li {
+    margin: 0;
+  }
+
+  .nav__item {
+    margin-left: 2em;
+  }
+
+  #flying-pic {
+    display: inline-flex;
+  }
+
+  .about-me__row {
+    gap: 5em;
+  }
+
+  .skills__item {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .contact__list {
+    justify-content: space-evenly;
+  }
+
+  .contact__item i {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .about-me__row,
+  .skills__row {
+    display: flex;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  #flying-pic {
+    float: right;
+    margin-left: 1em;
+    margin-top: 1.5em;
+  }
+}
