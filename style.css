@@ -1,6 +1,6 @@
 :root {
-  --primary-gradient: hsla(198, 9%, 70%, 0.5);
-  --secondary-gradient: hsla(0, 0%, 100%, 0.966);
+  --primary-gradient: rgba(172, 181, 185, 0.502);
+  --secondary-gradient: hsla(0, 0%, 100%, 0.95);
 }
 
 * {
@@ -40,6 +40,10 @@ section {
   padding: 2rem;
 }
 
+li {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   width: 80%;
@@ -49,9 +53,13 @@ section {
 header {
   margin: 0;
   text-align: center;
-  background-image: url("./resources/images/sky2.png");
-  background-size: cover;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-gradient),
+    var(--secondary-gradient)
+  );
   padding: 3em 0;
+  box-shadow: 0 20px 20px lightgray;
 }
 
 ul {
@@ -60,6 +68,10 @@ ul {
   font-size: 1rem;
   text-align: center;
   padding: 0;
+}
+
+li a {
+  text-decoration: none;
 }
 
 header div {
@@ -88,11 +100,9 @@ header div {
 }
 
 .gradient {
-  background: radial-gradient(
-    farthest-corner at 1200px 200px,
-    var(--primary-gradient),
-    var(--secondary-gradient)
-  );
+  background-image: url("./resources/images/sky2.png");
+  background-size: cover;
+  box-shadow: 0 10px 10px rgba(211, 211, 211, 0.4);
 }
 
 .about__me {

@@ -97,17 +97,23 @@
             <h2 class="skills__title">Skills</h2>
             <div class="skills__row">
               <div class="col">
-                <ul class="skills__list">
-                  <li class="skills__item">iOS <i class="fa fa-apple"></i></li>
+                <ul id="skillsList" class="skills__list">
+                  <li
+                    id="swift"
+                    class="skills__item"
+                    title="Swift Programming Language"
+                  >
+                    iOS <i class="fa fa-apple"></i>
+                  </li>
                   <li class="skills__item">HTML <i class="fa fa-html5"></i></li>
                   <li class="skills__item">CSS <i class="fa fa-css3"></i></li>
                   <li class="skills__item">SQL</li>
                 </ul>
               </div>
               <div class="col">
-                <ul class="skills__list">
+                <ul id="skillsList2" class="skills__list">
                   <li class="skills__item" style="vertical-align: baseline">
-                    <p>Javascript</p>
+                    Javascript
                     <img
                       src="./resources/images/javascript-icon-png-23.jpg"
                       alt="javascript icon"
@@ -129,7 +135,47 @@
         </section>
       </div>
       <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project__row row">
+            <div class="col">
+              <h3>iOS Projects</h3>
+              <ul class="project__list">
+                <li class="project__item">
+                  <a
+                    href="https://github.com/JaxTurboNerd/FlightCalculator"
+                    target="#"
+                    >Flight Calculator</a
+                  >
+                </li>
+                <li class="project__item">
+                  <a href="https://github.com/JaxTurboNerd/P-3-W-B" target="#"
+                    >P-3 Aircraft Weight and Balance</a
+                  >
+                </li>
+              </ul>
+              <h3>HTML/CSS/JS</h3>
+              <ul class="project__list">
+                <li class="project__item">
+                  <a
+                    href="https://github.com/JaxTurboNerd/Retirement-Calc-Flex"
+                    target="#"
+                    >Retirment Calculator</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Code Academy</h3>
+              <ul class="project__list">
+                <li class="project__item">Dasmoto's Project</li>
+                <li class="project__item">Tea Cozy</li>
+                <li class="project__item">Fashion Blog</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
       </section>
     </main>
     <footer></footer>
